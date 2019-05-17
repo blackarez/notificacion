@@ -1,0 +1,29 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="page" style="text-align:center">
+  <h1>
+    Servicio de notificaciones
+  </h1>
+</div> 
+<div class="page">
+  <p>Se muestra por defecto las notificaciones de información y error generadas por Toastr</p>
+
+  <p>A continuación se pueden activar las notificaciones personalizadas.</p>
+
+  <div class="contenAlert">
+    <button (click)="toogleInfo()" type="button" class="btn btn-secondary">Alerta info</button>
+    <button (click)="toogleWarning()" type="button" class="btn btn-danger">Alerta de error</button>
+  </div>
+
+  <div class="alert alert-primary" role="alert" *ngIf="displayInfo">
+    {{ info }}
+    <button (click)="toogleInfo()" type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+  <div class="alert alert-warning" role="alert" *ngIf="displayWarning">
+    {{ warning }}
+    <button (click)="toogleWarning()" type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+</div>

@@ -1,0 +1,20 @@
+/*custom elements*/
+
+.page{
+    padding: 10px;
+}
+
+.contenAlert button{
+    margin: 10px;
+}
+
+.alert-warning,
+.alert-primary
+{
+    position: fixed;
+    top: 10px;
+}
+
+h1{
+    color:red;
+}
